@@ -1,0 +1,32 @@
+<html>
+
+  <head>
+    <script type='text/javascript'>
+function ABTest(){
+  var link1="https://en.wikipedia.org/wiki/We_Are_Number_One"
+  var link2="https://en.wikipedia.org/wiki/Number_Two"
+  if (Math.random() < 0.5) { // do something cleverer here
+    window.location=link1
+  } else {
+    window.location=link2
+  }
+}
+    </script>
+  </head>
+
+  <body>
+    <p>
+      Thanks for agreeing to participate in this task. Please
+      press the button below when you’re ready to begin:
+    </p>
+    <p>
+    <button onclick="ABTest()">Start the story</button>
+    </p>
+  </body>
+
+</html>
+
+<!-- Using cookies to keep track of A/B testing
+  https://www.w3schools.com/js/tryit.asp?filename=tryjs_cookie_username
+  -->
+
