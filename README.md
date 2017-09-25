@@ -1,6 +1,4 @@
-# sample-ab-test
-
-Simple A/B testing for linguistic experiments
+# Simple A/B testing for linguistic experiments
 
 In online experiments we often want to dispatch particpants randomly to different versions of the test/questionnaire. It is quite simple to do this using a start webpage with a tiny bit of javascript.
 
