@@ -1,17 +1,55 @@
 <html>
-
+  <meta charset=utf-8>
   <head>
     <script type='text/javascript'>
+
+function setWhichTest(cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = "whichTest=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getWhichTest() {
+  var name = "whichTest=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function deleteCookie(){
+  setWhichTest("whichTest", "", 0)
+}
+
 function ABTest(){
-  var link1="https://en.wikipedia.org/wiki/We_Are_Number_One"
-  var link2="https://en.wikipedia.org/wiki/Number_Two"
-  if (Math.random() < 0.5) { // do something cleverer here
-    window.location=link1
+  var whichTest = getWhichTest();
+  var linkA="https://en.wikipedia.org/wiki/We_Are_Number_One"
+  var linkB="https://en.wikipedia.org/wiki/Number_Two"
+  if (whichTest == "A") {
+    window.location=linkA
+  } else if (whichTest == "B") {
+    window.location=linkB
   } else {
-    window.location=link2
+    if (Math.random() < 0.5) {
+      window.location=linkA
+      setWhichTest("A", 60)
+    } else {
+      window.location=linkB
+      setWhichTest("B", 60)
+    }
   }
 }
     </script>
+
   </head>
 
   <body>
@@ -20,13 +58,13 @@ function ABTest(){
       press the button below when you’re ready to begin:
     </p>
     <p>
-    <button onclick="ABTest()">Start the story</button>
+      <button onclick="ABTest()">Start the story</button>
     </p>
+    <!--
+    <p>
+      <button onclick="deleteCookie()">(delete cookie)</button>
+    </p>
+    -->
   </body>
 
 </html>
-
-<!-- Using cookies to keep track of A/B testing
-  https://www.w3schools.com/js/tryit.asp?filename=tryjs_cookie_username
-  -->
-
