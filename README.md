@@ -9,3 +9,8 @@ A free and simple way to make and host the website is with [Github Pages](https:
 - Copy and customise the html code from the [index.html](./index.html) file in this repository to the index.html file you created in your new repository. You need to replace the urls in this file with the urls for your different versions of the experiment. You will also want to put in some appropriate introductory text to be displayed to the user.
 
 If my username is **evolang** and my repository is called **sample-ab-test**, then the repository url will be https://github.com/evoling/sample-ab-test/ and the automatically generated webpage will be https://evoling.github.io/sample-ab-test/.
+
+Optional
+
+- Once you've got a GitHub account you can also get a free student GitHub package from [https://education.github.com/pack](https://education.github.com/pack). You will be required to sign in with your already existing GitHub account, and to provide your mail from the university, e.g. `aabbcc@lingfil.uu.se`). This allows you to create non-public repositories.
+
