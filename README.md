@@ -12,5 +12,7 @@ If my username is **evoling** and my repository is called **sample-ab-test**, th
 
 Optional
 
-- Once you've got a GitHub account you can also get a free student GitHub package from [https://education.github.com/pack](https://education.github.com/pack). You will be required to sign in with your already existing GitHub account, and to provide your mail from the university, e.g. `aabbcc@lingfil.uu.se`). This allows you to create non-public repositories.
+Repositories are visible to the entire world by default. To be able to host private, members only repositories you need to update your account:
+
+- Once you've got a GitHub account you can also get a free student GitHub package from [https://education.github.com/pack](https://education.github.com/pack). You will be required to sign in with your already existing GitHub account, and to provide your mail from the university, e.g. `aabbcc@lingfil.uu.se` to prove you are a student).
 
