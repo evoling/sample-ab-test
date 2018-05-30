@@ -8,7 +8,7 @@ A free and simple way to make and host the website is with [Github Pages](https:
 - Follow the instructions for making a GitHub Pages website on https://pages.github.com/
 - Copy and customise the html code from the [index.html](./index.html) file in this repository to the index.html file you created in your new repository. You need to replace the urls in this file with the urls for your different versions of the experiment. You will also want to put in some appropriate introductory text to be displayed to the user.
 
-If my username is **evolang** and my repository is called **sample-ab-test**, then the repository url will be https://github.com/evoling/sample-ab-test/ and the automatically generated webpage will be https://evoling.github.io/sample-ab-test/.
+If my username is **evoling** and my repository is called **sample-ab-test**, then the repository url will be https://github.com/evoling/sample-ab-test/ and the automatically generated webpage will be https://evoling.github.io/sample-ab-test/.
 
 Optional
 
